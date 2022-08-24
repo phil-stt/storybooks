@@ -1,0 +1,26 @@
+{
+  "name": "storybooks",
+  "version": "1.0.0",
+  "description": "App to share stories",
+  "main": "app.js",
+  "scripts": {
+    "start": "node -r dotenv/config app.js dotenv_config_path=.env.production",
+    "start-dev": "nodemon -r dotenv/config app.js dotenv_config_path=.env.development",
+    "start-prod": "node -r dotenv/config app.js dotenv_config_path=.env.production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phil-stt/storybooks.git"
+  },
+  "author": "Phil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phil-stt/storybooks/issues"
+  },
+  "homepage": "https://github.com/phil-stt/storybooks#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  }
+}
