@@ -5,11 +5,14 @@ const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-ac
 const path = require('path');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const methodOverride = require('method-override');
 const session = require('express-session');
 const passport = require('passport');
 
-// Load User Model
+// Load Models
 require('./models/User');
+require('./models/Story');
 
 // Passport Config
 require('./config/passport')(passport);
@@ -22,6 +25,14 @@ const stories = require('./routes/stories');
 // Load Keys
 const keys = require('./config/keys');
 
+// Handlebars Helpers
+const {
+  truncate,
+  stripTags,
+  formatDate,
+  select
+} = require('./helpers/hbs');
+
 // Map global promises
 mongoose.Promise = global.Promise;
 // Mongoose Connect
@@ -33,8 +44,21 @@ mongoose.connect(keys.mongoURI, {
 
 const app = express();
 
+// Body Parser Middleware
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
+// Method Override Middelware
+app.use(methodOverride('_method'));
+
 // Handlebars Middleware
 app.engine('handlebars', engine({
+  helpers: {
+    truncate: truncate,
+    stripTags: stripTags,
+    formatDate: formatDate,
+    select: select
+  },
   handlebars: allowInsecurePrototypeAccess(Handlebars)
 }));
 app.set('view engine', 'handlebars');
