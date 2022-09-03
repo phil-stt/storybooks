@@ -95,6 +95,7 @@ router.put('/:id', (req, res) => {
 
       story.save()
         .then(story => {
+          req.flash('success_msg', 'Story Updated');
           res.redirect('/dashboard');
         });
     });
