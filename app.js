@@ -31,7 +31,8 @@ const {
   truncate,
   stripTags,
   formatDate,
-  select
+  select,
+  editIcon
 } = require('./helpers/hbs');
 
 // Map global promises
@@ -58,7 +59,8 @@ app.engine('handlebars', engine({
     truncate: truncate,
     stripTags: stripTags,
     formatDate: formatDate,
-    select: select
+    select: select,
+    editIcon: editIcon
   },
   handlebars: allowInsecurePrototypeAccess(Handlebars)
 }));
