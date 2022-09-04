@@ -69,6 +69,7 @@ router.post('/', (req, res) => {
   new Story(newStory)
     .save()
     .then(story => {
+      req.flash('success_msg', 'Story Added');
       res.redirect(`/stories/show/${story.id}`);
     });
 });
@@ -105,6 +106,7 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
   Story.deleteOne({ _id: req.params.id })
     .then(() => {
+      req.flash('success_msg', 'Story Deleted');
       res.redirect('/dashboard');
     });
 });
