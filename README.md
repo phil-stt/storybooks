@@ -4,7 +4,7 @@
 Storybooks is an example of a simple blog/story publishing app using Node.js, Express, and MongoDB with Bootstap CSS.  It uses Google OAuth2 for authentication via Passport, and Handlebars to compile templates into JavaScript functions.
 
 [![JavaScript][JavaScript.com]][Javascript-url]
-[![NodeJS][NodeJS]][NodeJS-url]
+[![NodeJS][NodeJS]][NodeJS-url]å
 [![Express.js][Express.js]][Express-url]
 [![MongoDB][MongoDB.com]][MongoDB-url]
 [![Bootstrap][Bootstrap.com]][Bootstrap-url]
@@ -21,9 +21,9 @@ Storybooks is an example of a simple blog/story publishing app using Node.js, Ex
 - Install Node.js and create a MongoDB instance 
 - Create your Google OAuth2 application and keys in GCP
 - Clone the repo
-```
-git clone https://github.com/phil-stt/storybooks
-```
+    ```
+    git clone https://github.com/phil-stt/storybooks
+    ```
 - Install node packages `npm install`
 - Enter your API keys and MongoDB connection URI in `config/keys.js`
 - Run `npm start` to start the app
