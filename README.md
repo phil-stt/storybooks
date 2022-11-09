@@ -4,6 +4,7 @@
 Storybooks is an example of a simple blog/story publishing app using Node.js, Express, and MongoDB with Bootstap CSS.  It uses Google OAuth2 for authentication via Passport, and Handlebars to compile templates into JavaScript functions.
 
 [![JavaScript][JavaScript.com]][Javascript-url]
+[![NodeJS][NodeJS]][NodeJS-url]
 [![Express.js][Express.js]][Express-url]
 [![MongoDB][MongoDB.com]][MongoDB-url]
 [![Bootstrap][Bootstrap.com]][Bootstrap-url]
@@ -98,7 +99,12 @@ SOFTWARE.
 [MongoDB-url]: https://www.mongodb.com/
 [Express.js]: https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB
 [Express-url]: https://expressjs.com
-
+[Django]: https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white
+[Django-url]: https://www.djangoproject.com/
+[DjangoREST]: https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray
+[DjangoREST-url]: https://www.django-rest-framework.org/
+[NodeJS]: https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white
+[NodeJS-url]: https://nodejs.org/en/
 
 
 
