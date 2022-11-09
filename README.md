@@ -8,6 +8,7 @@ Storybooks is an example of a simple blog/story publishing app using Node.js, Ex
 [![Express.js][Express.js]][Express-url]
 [![MongoDB][MongoDB.com]][MongoDB-url]
 [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+[![Google Cloud Platform][GCP]][GCP-url]
 
 
 ## Table of Contents
@@ -105,6 +106,8 @@ SOFTWARE.
 [DjangoREST-url]: https://www.django-rest-framework.org/
 [NodeJS]: https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white
 [NodeJS-url]: https://nodejs.org/en/
+[GCP]: https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white
+[GCP-url]: https://console.cloud.google.com/
 
 
 
